@@ -9,10 +9,18 @@ This web application is created using R + Shiny. Shiny is one of the very good w
 
 This app has SEM implemented through both EFA & CFA. It is possible for users to obtain path diagrams for both EFA and CFA. 
 
-I specially would like to thank Prof. WILLIAM REVELLE of NorthWestern University for creating a wounderful library "psych" which is widely used in psychometrics. It might not be possible for me to create this app, if he had not done such a commendable work. He is inspiration to budding statisticians like me. Read more about "psych" at https://cran.r-project.org/web/packages/psych/index.html. If you are new to SEM, you definitely have to read his vignette https://personality-project.org/r/book/psych_for_sem.pdf. Salutes to Prof. W. Revelle from bottom of my heart. 
+I specially would like to thank Prof. WILLIAM REVELLE of NorthWestern University for creating a wounderful library "psych" which is widely used in psychometrics. Read more about "psych" at https://cran.r-project.org/web/packages/psych/index.html. If you are new to SEM, you definitely have to read his vignette https://personality-project.org/r/book/psych_for_sem.pdf. Salutes to Prof. W. Revelle from bottom of my heart. "psych" is used to implement SEM through EFA in the application. 
+
+The other package which I must mention is "lavaan". "lavaan" happened to be a great helpful for implementing SEM through CFA. Thanks to "lavaan" team. Please read more about "lavaan" at http://lavaan.ugent.be/tutorial/index.html. There is a very nice vignette at http://lavaan.ugent.be/tutorial/tutorial.pdf. 
 
 This application is not an alternative to AMOS like GUI based SEM applications. Moreover, it is rather more simpler than such applications while performing SEM. The implementation model for RGfSEM is very simple, (1) upload data, (2) click options and (3) get results (inlcuding numerical analysis and visuals). 
 
 This application depends on few libraries such as (1) shiny, (2) shinydashboard, (3) nortest, (4) mvnormtest, (5) MASS, (6)   lavaan, (7) psych and (8) sem. You need to install these packages in RStudio well before starting this application. If you don't know as how to install R packages, read https://www.r-bloggers.com/installing-r-packages/ for details. For instace, to install "psych" at R prompt execute "install.packages("psych")" [without quotes]. 
+
+I created few video demonstrations on this application: 
+
+Introduction - https://www.youtube.com/watch?v=ENfPWBJebaw&feature=youtu.be
+EFA & SEM - 
+CFA & SEM - 
 
 For queries and consultancy contact me: +919177573730; kamakshaiah.m@gmail.com
