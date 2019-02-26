@@ -20,7 +20,9 @@ This application depends on few libraries such as (1) shiny, (2) shinydashboard,
 I created few video demonstrations on this application: 
 
 Introduction - https://www.youtube.com/watch?v=ENfPWBJebaw&feature=youtu.be
+
 EFA & SEM - 
+
 CFA & SEM - 
 
 For queries and consultancy contact me: +919177573730; kamakshaiah.m@gmail.com
