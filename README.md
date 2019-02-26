@@ -23,6 +23,8 @@ Introduction - https://www.youtube.com/watch?v=ENfPWBJebaw&feature=youtu.be
 
 EFA & SEM - https://www.youtube.com/watch?v=QxzFtKn_LKc&feature=youtu.be
 
-CFA & SEM - 
+CFA & SEM - https://www.youtube.com/watch?v=ZTm7VOJJ7Ng&feature=youtu.be
+
+Mediation Analysis - https://www.youtube.com/watch?v=bI9kzOYDuDA&feature=youtu.be
 
 For queries and consultancy contact me: +919177573730; kamakshaiah.m@gmail.com
