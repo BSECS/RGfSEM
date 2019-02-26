@@ -8,12 +8,6 @@ library(psych)
 library(sem)
 
 
-
-# PREAMBLE begins
-# READ (FOR REPORTS) https://shiny.rstudio.com/articles/generating-reports.html
-
-# PREAMBLE ends
-
 ui <- fluidPage(
   
   navbarPage(title = "RGfSEM",
@@ -179,7 +173,9 @@ ui <- fluidPage(
                                      
                                      textInput("nf1", "No. of Factors", value = "2", placeholder = "Write the number"),
                                      radioButtons("efaplot", "Structure:", choices = c("EFA", "Structure Diagram", "I don't know anything; please fit EFA")),
-                                     radioButtons("efaomegaplot", "Structural Plots", choices = c("No Fit", "Omega Fit"))
+                                     radioButtons("efaomegaplot", "Structural Plots", choices = c("No Plot", "Omega Plot")), 
+                                     helpText("Read details about EFA & SEM at"),
+                                     a(href="https://personality-project.org/r/book/psych_for_sem.pdf", "psych for SEM")
                                    ),
                                    mainPanel(
                                      fluidRow(
@@ -198,13 +194,14 @@ ui <- fluidPage(
                         tabPanel("CFA & SEM",
                                  sidebarLayout(
                                    sidebarPanel(
-                                     hr(),
                                      helpText("Entire data set is used for fitting SEM; Make data convenient well before uploading at 'Data Sets' menu."),
-                                     hr(),
                                      fileInput("lavmod", "Upload Model"),
+                                     helpText("You need to upload model defined in text file with a format 'mymodel.lav'"),
                                      textInput("nf2", "No. of Factors", value = "3", placeholder = "Write the number"),
                                      radioButtons("semtype", "Structure:", choices = c("CFA", "CFA Summary", "Fit Measures", "I don't know anything; please fit SEM")),
-                                     radioButtons("semplot", "Structural Plots", choices = c("No Fit", "Structure Diagram", "Omega Fit"))
+                                     radioButtons("semplot", "Structural Plots", choices = c("No Plot", "Structure Diagram", "Omega Plot")),
+                                     helpText("Read more about CFA & SEM at"),
+                                     a(href="http://lavaan.ugent.be/tutorial/tutorial.pdf", "lavaan for SEM")
                                    ),
                                    mainPanel(
                                      fluidRow(
@@ -544,7 +541,7 @@ server <- function(input, output, session) {
   output$efadiagram <- renderPlot({
     if(input$efaplot == "Structure Diagram"){
       structure.diagram(faout())
-    } else if(input$efaomegaplot == "Omega Fit"){
+    } else if(input$efaomegaplot == "Omega Plot"){
       omega.diagram(omegaout())
     }
   })
@@ -592,7 +589,7 @@ server <- function(input, output, session) {
   output$semdiagram <- renderPlot({
     if(input$semplot == "Structure Diagram"){
       lavaan.diagram(cfaout())
-    } else if(input$semplot == "Omega Fit"){
+    } else if(input$semplot == "Omega Plot"){
       omega.diagram(omegasem())
     }
     
