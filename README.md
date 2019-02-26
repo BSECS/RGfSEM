@@ -21,7 +21,7 @@ I created few video demonstrations on this application:
 
 Introduction - https://www.youtube.com/watch?v=ENfPWBJebaw&feature=youtu.be
 
-EFA & SEM - 
+EFA & SEM - https://www.youtube.com/watch?v=QxzFtKn_LKc&feature=youtu.be
 
 CFA & SEM - 
 
